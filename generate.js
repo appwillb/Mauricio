@@ -160,6 +160,86 @@ ${cta(90, 1780, 640, "SALVE + COMPARTILHE")}
 </g>`;
     return shell({ defs, body });
   },
+
+  "segunda-estudio": () => {
+    const defs =
+      grad("bg", [
+        ["0%", "#0b0c10"],
+        ["50%", "#1a1d2e"],
+        ["100%", "#0b0c10"],
+      ], ["0% 0%", "100% 100%"]) + softBlur;
+    const body = `
+<rect width="${W}" height="${H}" fill="url(#bg)"/>
+${blob(900, 180, 400, "#00f0ff", 0.15)}
+${blob(180, 1700, 350, "#d946ef", 0.12)}
+${blob(540, 960, 600, "#00f0ff", 0.04)}
+<g>
+${badge(90, 180, "SEGUNDA — ESTÚDIO", { fill: "#00f0ff", ink: "#0b0c10" })}
+${handle(990, 220, "@tunemusicpro", "end")}
+${lines(90, 380, ["SUA MÚSICA", "NO TOM CERTO"], { size: 108, weight: 800, lh: 1.05 })}
+<text x="90" y="620" font-family="Poppins" font-weight="400" font-size="38" fill="#00f0ff" opacity="0.9">Separe voz, mude o tom, crie playback em segundos.</text>
+${card(90, 720, 900, 220, "1", ["STEM SPLITTER IA", "Isole vocal, bateria, baixo, guitarra, piano"], "#00f0ff")}
+${card(90, 980, 900, 220, "2", ["PITCH & SPEED", "Mude tom (semitons) e BPM sem perder qualidade"], "#d946ef")}
+${card(90, 1240, 900, 220, "3", ["VOCAL ISOLATOR", "Limpe ruídos, chiados e grave voz profissional"], "#00f0ff")}
+${cta(90, 1550, 680, "TESTAR tunemusic PRO", { fill: "#00f0ff", ink: "#0b0c10" })}
+${handle(990, 1780, "arraste para testar", "end")}
+</g>`;
+    return shell({ defs, body });
+  },
+
+  "quarta-palco": () => {
+    const defs =
+      grad("bg", [
+        ["0%", "#0b0c10"],
+        ["40%", "#161a33"],
+        ["100%", "#0b0c10"],
+      ], ["0% 100%", "100% 0%"]) + softBlur;
+    const body = `
+<rect width="${W}" height="${H}" fill="url(#bg)"/>
+${blob(150, 250, 380, "#d946ef", 0.18)}
+${blob(930, 1600, 400, "#00f0ff", 0.14)}
+${blob(540, 960, 500, "#d946ef", 0.05)}
+<g>
+${badge(90, 180, "QUARTA — PALCO", { fill: "#d946ef", ink: "#0b0c10" })}
+${handle(990, 220, "@tunemusicpro", "end")}
+${lines(90, 380, ["DOMINE O PALCO", "COM TELEPROMPTER PRO"], { size: 104, weight: 800, lh: 1.05 })}
+<text x="90" y="620" font-family="Poppins" font-weight="400" font-size="38" fill="#d946ef" opacity="0.9">Letras no telão HDMI, avisos à banda, cronômetro de show.</text>
+${card(90, 720, 900, 210, "1", ["TELÃO HDMI / 2ª TELA", "Letras e acordes em 4K para banda e público"], "#d946ef")}
+${card(90, 970, 900, 210, "2", ["BUSCA DE LETRAS + SETLISTS", "Repertório organizado, busca automática mundial"], "#00f0ff")}
+${card(90, 1220, 900, 210, "3", ["COMUNICAÇÃO DE PALCO", "Envie 'Solo', 'Repetir', '5 Minutos' em tempo real"], "#d946ef")}
+${card(90, 1470, 900, 210, "4", ["CRONÔMETRO DE SHOW", "Relógio e contagem regressiva visíveis sempre"], "#00f0ff")}
+${cta(90, 1730, 680, "TESTAR tunemusic PRO", { fill: "#d946ef", ink: "#0b0c10" })}
+${handle(990, 1850, "arraste para testar", "end")}
+</g>`;
+    return shell({ defs, body });
+  },
+
+  "sexta-fds": () => {
+    const defs =
+      grad("bg", [
+        ["0%", "#0b0c10"],
+        ["50%", "#0d1226"],
+        ["100%", "#0b0c10"],
+      ], ["0% 0%", "100% 100%"]) + softBlur;
+    const body = `
+<rect width="${W}" height="${H}" fill="url(#bg)"/>
+${blob(100, 200, 350, "#00f0ff", 0.18)}
+${blob(980, 1500, 380, "#d946ef", 0.16)}
+${blob(540, 960, 550, "#00f0ff", 0.04)}
+<g>
+${badge(90, 180, "SEXTA — FIM DE SEMANA", { fill: "#00f0ff", ink: "#0b0c10" })}
+${handle(990, 220, "@tunemusicpro", "end")}
+${lines(90, 380, ["SHOW DO FDS:", "PLAYBACK PRONTO", "EM SEGUNDOS"], { size: 100, weight: 800, lh: 1.05 })}
+<text x="90" y="630" font-family="Poppins" font-weight="400" font-size="38" fill="#00f0ff" opacity="0.9">Gere karaokê pro, ensaie, baixe o app desktop e suba no palco.</text>
+${card(90, 730, 900, 210, "1", ["PLAYBACK / KARAOKÊ PRO", "Faixas instrumentais limpas para ensaio e show"], "#00f0ff")}
+${card(90, 980, 900, 210, "2", ["DETECTOR TOM & BPM", "Descubra a escala exata (ex: C# menor) e o andamento"], "#d946ef")}
+${card(90, 1230, 900, 210, "3", ["APP DESKTOP WINDOWS", "Versão Pro instalada: mais rápido, offline, estável"], "#00f0ff")}
+${card(90, 1480, 900, 210, "4", ["WEB + DESKTOP 2 EM 1", "Estúdio de IA + Teleprompter de palco unificados"], "#d946ef")}
+${cta(90, 1740, 680, "BAIXAR tunemusic PRO", { fill: "#00f0ff", ink: "#0b0c10" })}
+${handle(990, 1860, "link na bio / arraste", "end")}
+</g>`;
+    return shell({ defs, body });
+  },
 };
 
 const outDir = path.join(__dirname, "flyers");
